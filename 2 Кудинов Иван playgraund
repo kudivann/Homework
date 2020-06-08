@@ -1,0 +1,35 @@
+import UIKit
+// 1. Написать функцию, которая определяет, четное число или нет.
+
+func a (a: Int) -> Bool {
+let b =  a % 2 == 0 ? true : false
+return b
+}
+
+
+//2 Написать функцию, которая определяет, делится ли число без остатка на 3.
+
+var number: [Int] = [1, 2, 3, 4, 5, 6]
+var filteredNums = number.filter({$0 % 3==0})
+    
+// 3
+
+var chislo = Array (1...100)
+
+// 4 Удалить из этого массива все четные числа и все числа, которые не делятся на 3.
+
+var Newchislo = Array (1...100)
+for element in Newchislo where element % 2 == 0 || element % 3 != 0 {
+    Newchislo.remove (at: element)
+    print(element)
+}
+
+// 5
+func Fibonachi() -> [Double] {
+    var arr: [Double] = [0, 1, 1]
+    for i in 2...100 {
+        arr.append(arr[i] + arr[i - 1])
+    }
+    return arr
+}
+

@@ -32,4 +32,5 @@ func Fibonachi() -> [Double] {
     }
     return arr
 }
+вау, вот это да
 
